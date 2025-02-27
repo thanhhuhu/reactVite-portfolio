@@ -1,15 +1,40 @@
-import {GithubOutlined} from "@ant-design/icons";
+import {FacebookOutlined, GithubOutlined, InstagramOutlined} from "@ant-design/icons";
+import {Link} from "react-router";
 
-const Footer = () =>{
+const Footer = () => {
     return (
-        <div className="bg-black">
-            <div>
-                <span>Sponsored by Thanh dep trai vcloz</span>
+        <div className="bg-black flex flex-col items-center justify-center h-20">
+            <div className="flex gap-4">
+                <GithubOutlined
+                    style={{
+                        backgroundColor: "white",
+                        fontSize: "30px",
+                        borderRadius: "10px",
+                        padding: "5px",
+                    }}
+                />
+                <InstagramOutlined
+                    style={{
+                        backgroundColor: "white",
+                        fontSize: "30px",
+                        borderRadius: "10px",
+                        padding: "5px",
+                    }}
+                />
+                <FacebookOutlined
+                        style={{
+                            backgroundColor: "white",
+                            fontSize: "30px",
+                            borderRadius: "10px",
+                            padding: "5px",
+                        }}
+                />
             </div>
-            <GithubOutlined
-                style={{backgroundColor:"white",}}
-            />
+            <div className="text-center text-white">
+                <h1>Copyright © Nguyen Thanh</h1>
+            </div>
         </div>
-    )
-}
-export default Footer
+    );
+};
+
+export default Footer;
