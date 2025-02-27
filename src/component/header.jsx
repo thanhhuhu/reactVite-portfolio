@@ -11,23 +11,23 @@ const Header = () => {
 
    const items = [
        {
-           key: "1",
+           key: "aboutMe",
            label: 'About me',
            type:'link'
 
        },
        {
-           key: "2",
+           key: "experience",
            label: 'Experience',
            type:'link'
        },
        {
-           key: "3",
+           key: "skills",
            label: 'Skills',
            type:'link'
        },
        {
-           key: "4",
+           key: "projects",
            label: 'Projects',
            type:'link'
        },
@@ -36,17 +36,17 @@ const Header = () => {
         <div style={{backgroundColor: "skyblue"}}>
             <Menu
                 style={{
-                    width: 256,
+                    width: 350,
                     height: "5vh",
                     backgroundColor: "skyblue",
                     color:'black',
                     fontSize: "15px",
                     fontFmaily:"monospace",
                 }}
-                    // defaultSelectedKeys={['1']}
-                    // defaultOpenKeys={['sub1']}
-                mode="horizontal"
-                items={items}
+                    defaultSelectedKeys={['aboutMe']}
+                    defaultOpenKeys={['aboutMe']}
+                    mode="horizontal"
+                    items={items}
             />
             <header
                 style={{
@@ -67,10 +67,10 @@ const Header = () => {
                 <h1>
                     <TypeAnimation
                         sequence={[
-                            // "I am a dog", 1000,
-                            // "I am a cat", 1000,
-                            // "I am a pig", 1000,
-                            // "I am a cow", 1000,
+                            "I am a son of communism", 1000,
+                            "I am a front-end developer", 1000,
+                            "I am a student", 1000,
+                            "I am a amateur", 1000,
                         ]}
                         wrapper="span"
                         speed={50}
@@ -78,41 +78,41 @@ const Header = () => {
                         repeat={Infinity}
                     />
                 </h1>
-                <Switch
-                    checked
-                    onChange = {''}
-                    offColor="#baaa80"
-                    onColor="#353535"
-                    className="react-switch mx-auto"
-                    width={90}
-                    height={40}
-                    uncheckedIcon={
-                        <span
-                            className="iconify"
-                            data-icon="twemoji:owl"
-                            style=
-                                {{ display: "block",
-                                    height: "100%",
-                                    fontSize: 25,
-                                    marginLeft: "20px",
-                                    color: "#353239" ,
-                                }}
-                        ></span>
-                    }
-                    checkedIcon={
-                        <span
-                            className="iconify"
-                            data-icon="noto-v1:sun-with-face"
-                            style={{
-                                display: "block",
-                                height: "100%",
-                                fontSize: 25,
-                                marginLeft: "10px",
-                                color: "#353239"
-                            }}
-                        ></span>
-                    }
-                 />
+                {/*<Switch*/}
+                {/*    checked*/}
+                {/*    onChange = {''}*/}
+                {/*    offColor="#baaa80"*/}
+                {/*    onColor="#353535"*/}
+                {/*    className="react-switch mx-auto"*/}
+                {/*    width={90}*/}
+                {/*    height={40}*/}
+                {/*    uncheckedIcon={*/}
+                {/*        <span*/}
+                {/*            className="iconify"*/}
+                {/*            data-icon="twemoji:owl"*/}
+                {/*            style=*/}
+                {/*                {{ display: "block",*/}
+                {/*                    height: "100%",*/}
+                {/*                    fontSize: 25,*/}
+                {/*                    marginLeft: "20px",*/}
+                {/*                    color: "#353239" ,*/}
+                {/*                }}*/}
+                {/*        ></span>*/}
+                {/*    }*/}
+                {/*    checkedIcon={*/}
+                {/*        <span*/}
+                {/*            className="iconify"*/}
+                {/*            data-icon="noto-v1:sun-with-face"*/}
+                {/*            style={{*/}
+                {/*                display: "block",*/}
+                {/*                height: "100%",*/}
+                {/*                fontSize: 25,*/}
+                {/*                marginLeft: "10px",*/}
+                {/*                color: "#353239"*/}
+                {/*            }}*/}
+                {/*        ></span>*/}
+                {/*    }*/}
+                {/* />*/}
                 <div
                     style={{
                         position: "absolute",
@@ -123,9 +123,10 @@ const Header = () => {
                         gap: "10px",
                     }}
                 >
-                    <VN title="Vietnam" className="flag-icon" style={{ width: "70px", height: "25px", borderRadius: "10px" }} />
-                    {/*<RU title="Russia" className="flag-icon" style={{ width: "50px", height: "auto", borderRadius: "10px" }} />*/}
-                    {/*<GB title="Great Britain" className="flag-icon" style={{ width: "50px", height: "auto", borderRadius: "10px" }} />*/}
+
+                    <VN title="Vietnam" className="flag-icon" style={{ width: "70px", height: "35px",  }} />
+                    <RU title="Russia" className="flag-icon" style={{ width: "50px", height: "auto",  }} />
+                    <GB title="Great Britain" className="flag-icon" style={{ width: "50px", height: "auto",  }} />
                 </div>
             </header>
         </div>

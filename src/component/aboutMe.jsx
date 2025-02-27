@@ -8,7 +8,7 @@ import bootstrapIcon from "@iconify/icons-logos/bootstrap";
 import typeScriptIcon from "@iconify/icons-logos/typescript";
 import mysqlIcon from "@iconify/icons-logos/mysql";
 import mongodbIcon from "@iconify/icons-logos/mongodb";
-import {FrownOutlined} from "@ant-design/icons";
+import {FrownOutlined, MehOutlined, SmileOutlined} from "@ant-design/icons";
 
 const About = () => {
     return (
@@ -23,16 +23,21 @@ const About = () => {
                             className="w-full h-64 object-cover rounded-lg shadow-md"
                         />
                         <div className="flex justify-center gap-6 mt-4">
-                            {/*<Icon icon={reactIcon} className="text-blue-500" width="40" height="40" />*/}
-                            {/*<Icon icon={javaScriptIcon} className="text-yellow-500" width="40" height="40" />*/}
                             <FrownOutlined
-                            style={{fontSize: "2rem"}}/>
+                                style={{fontSize: "2rem"}}/>
+                            <MehOutlined
+                                style={{fontSize: "2rem"}}
+                            />
+                            <SmileOutlined
+                                style={{fontSize: "2rem"}}
+                            />
                         </div>
                     </div>
 
                     <div className="bg-white p-6 rounded-lg shadow-lg w-[1200px] h-[200px] text-center flex items-center px-8 ml-8">
                         <p>
-                            Hi, I'm Thanh, nice to meet you, maybe you dont know me but i know u :)
+                            Hi, i&#39;m Thanh, i&#39;m a student of universtiy, i dont have much experience, i have a few small projects about web
+                            and you can check it below. Thank you very much for being here 💝
                         </p>
                     </div>
                 </div>
