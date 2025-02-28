@@ -12,8 +12,8 @@ import {FrownOutlined, MehOutlined, SmileOutlined} from "@ant-design/icons";
 
 const About = () => {
     return (
-        <div >
-            <div id="about" className="flex flex-col items-center h-120 bg-gray-200 p-6 ">
+        <div id="about">
+            <div  id="about" className="flex flex-col items-center h-120 bg-gray-200 p-6 ">
                 <h1 className="text-3xl mb-6 text-center">About Me</h1>
                 <div className="flex justify-center items-center w-4/5  gap-x-50">
                     <div className="bg-white p-6 rounded-lg shadow-lg w-150  text-center">

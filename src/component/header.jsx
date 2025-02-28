@@ -1,35 +1,31 @@
-import { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
-import Switch from "react-switch";
-import {AmazonOutlined} from "@ant-design/icons";
 import { RU } from "country-flag-icons/react/3x2";
 import { VN } from "country-flag-icons/react/1x1";
 import { GB } from "country-flag-icons/react/3x2";
 import {Menu} from "antd";
+import {MdOutlineComputer} from "react-icons/md";
 
-const Header = () => {
+// eslint-disable-next-line react/prop-types
+const Header = ({ scrollToSection, aboutRef, experienceRef, projectsRef}) => {
 
    const items = [
        {
            key: "aboutMe",
            label: 'About me',
-           type:'link'
-
+           type:'link',
+           onClick: () => scrollToSection(aboutRef)
        },
        {
            key: "experience",
            label: 'Experience',
-           type:'link'
-       },
-       {
-           key: "skills",
-           label: 'Skills',
-           type:'link'
+           type:'link',
+           onClick: () => scrollToSection(experienceRef)
        },
        {
            key: "projects",
            label: 'Projects',
-           type:'link'
+           type:'link',
+           onClick: () => scrollToSection(projectsRef)
        },
    ]
     return (
@@ -60,8 +56,7 @@ const Header = () => {
                     position: "relative",
                 }}
             >
-                <AmazonOutlined style={{ fontSize: "100px", margin: "20px 0" }} />
-                {/* Tên */}
+                <MdOutlineComputer style={{ fontSize: "100px", margin: "20px 0" }} />
                 <span style={{ fontSize: "20px", fontFamily: "sans-serif" }}>Nguyen Dinh Thanh</span>
 
                 <h1>
@@ -78,41 +73,6 @@ const Header = () => {
                         repeat={Infinity}
                     />
                 </h1>
-                {/*<Switch*/}
-                {/*    checked*/}
-                {/*    onChange = {''}*/}
-                {/*    offColor="#baaa80"*/}
-                {/*    onColor="#353535"*/}
-                {/*    className="react-switch mx-auto"*/}
-                {/*    width={90}*/}
-                {/*    height={40}*/}
-                {/*    uncheckedIcon={*/}
-                {/*        <span*/}
-                {/*            className="iconify"*/}
-                {/*            data-icon="twemoji:owl"*/}
-                {/*            style=*/}
-                {/*                {{ display: "block",*/}
-                {/*                    height: "100%",*/}
-                {/*                    fontSize: 25,*/}
-                {/*                    marginLeft: "20px",*/}
-                {/*                    color: "#353239" ,*/}
-                {/*                }}*/}
-                {/*        ></span>*/}
-                {/*    }*/}
-                {/*    checkedIcon={*/}
-                {/*        <span*/}
-                {/*            className="iconify"*/}
-                {/*            data-icon="noto-v1:sun-with-face"*/}
-                {/*            style={{*/}
-                {/*                display: "block",*/}
-                {/*                height: "100%",*/}
-                {/*                fontSize: 25,*/}
-                {/*                marginLeft: "10px",*/}
-                {/*                color: "#353239"*/}
-                {/*            }}*/}
-                {/*        ></span>*/}
-                {/*    }*/}
-                {/* />*/}
                 <div
                     style={{
                         position: "absolute",
@@ -123,12 +83,12 @@ const Header = () => {
                         gap: "10px",
                     }}
                 >
-
                     <VN title="Vietnam" className="flag-icon" style={{ width: "70px", height: "35px",  }} />
                     <RU title="Russia" className="flag-icon" style={{ width: "50px", height: "auto",  }} />
                     <GB title="Great Britain" className="flag-icon" style={{ width: "50px", height: "auto",  }} />
                 </div>
             </header>
+
         </div>
     );
 };

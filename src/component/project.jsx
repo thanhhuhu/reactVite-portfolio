@@ -1,20 +1,20 @@
-import React from 'react';
 import { Card } from 'antd';
 
 const Project = () => {
     const { Meta } = Card;
     return (
-        <div className="h-screen flex flex-col items-center justify-center bg-cyan-950">
-            <h1 className="text-3xl font-bold mb-6 text-white">
+        <div className="h-screen flex flex-col items-center justify-center bg-white">
+            <h1 className="text-3xl font-bold mb-6 text-black">
                 Project
             </h1>
-            <div className="grid grid-cols-3 gap-10 ">
+            <div className="grid grid-cols-3 gap-10  item-center">
                 <Card
                     hoverable
                     style={{ width: 250, height: 200, }}
-                    cover={<img alt="" src="img/1.png" />}
+                    cover={<img alt="" src="/img/1.png" />}
                 >
-                    <Meta title="Project 1" description="https://github.com/thanhhuhu/react-vite-hoidanit" />
+                    <Meta title="Project user and table"
+                          description="https://github.com/thanhhuhu/react-vite-hoidanit" />
                 </Card>
                 <Card
                     hoverable
@@ -32,7 +32,7 @@ const Project = () => {
                 </Card>
                 <Card
                     hoverable
-                    style={{ width: 250, height: 200, textAlign:"center"}}
+                    style={{ width: 250, height: 200}}
                     cover={<img alt="" src="https://via.placeholder.com/200x150" />}
                 >
                     <Meta title="Project 4" description="www.instagram.com" />
