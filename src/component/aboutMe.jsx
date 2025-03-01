@@ -1,14 +1,11 @@
-import { Icon } from "@iconify/react";
-import javaScriptIcon from "@iconify/icons-logos/javaScript";
-import reactIcon from "@iconify/icons-logos/react";
-import html5Icon  from "@iconify/icons-logos/html-5"
-import css3Icon  from "@iconify/icons-logos/css-3";
-import sassIcon from "@iconify/icons-logos/sass";
-import bootstrapIcon from "@iconify/icons-logos/bootstrap";
-import typeScriptIcon from "@iconify/icons-logos/typescript";
-import mysqlIcon from "@iconify/icons-logos/mysql";
-import mongodbIcon from "@iconify/icons-logos/mongodb";
 import {FrownOutlined, MehOutlined, SmileOutlined} from "@ant-design/icons";
+import {FaBootstrap, FaReact, FaSass} from "react-icons/fa";
+import {TiHtml5} from "react-icons/ti";
+import {SiMysql} from "react-icons/si";
+import {RiTailwindCssFill} from "react-icons/ri";
+import {IoLogoCss3, IoLogoJavascript} from "react-icons/io";
+import {DiMongodb} from "react-icons/di";
+import {TbBrandTypescript} from "react-icons/tb";
 
 const About = () => {
     return (
@@ -47,15 +44,16 @@ const About = () => {
                     <h1>SKILLS</h1>
                 </span>
                 <div className="flex gap-x-5 justify-center mt-5 rounded-sm h-[150px]">
-                    <Icon icon ={html5Icon} width="70" height="70" style={{border: "1px solid black", backgroundColor:"black", borderRadius:"2px"}} />
-                    <Icon icon ={css3Icon} width="70" height="70" style={{border: "1px solid black", backgroundColor:"black", borderRadius:"2px"}}  />
-                    <Icon icon ={sassIcon} width="70" height="70" style={{border: "1px solid black", backgroundColor:"black", borderRadius:"2px"}} />
-                    <Icon icon ={typeScriptIcon} width="100" height="70" style={{border: "1px solid black", backgroundColor:"black", borderRadius:"2px"}} />
-                    <Icon icon ={bootstrapIcon} width="70" height="70" style={{border: "1px solid black", backgroundColor:"black", borderRadius:"2px"}} />
-                    <Icon icon ={reactIcon} width="70" height="70" style={{border: "1px solid black", backgroundColor:"black", borderRadius:"2px"}} />
-                    <Icon icon ={mysqlIcon} width="70" height="70" style={{border: "1px solid black", backgroundColor:"black", borderRadius:"2px"}} />
-                    <Icon icon ={mongodbIcon} width="100" height="70" style={{border: "1px solid black", backgroundColor:"white", borderRadius:"2px"}} />
-                    <Icon icon ={javaScriptIcon} width="100" height="70" style={{border: "1px solid black", backgroundColor:"black", borderRadius:"2px"}} />
+                    <TiHtml5   style={{ backgroundColor:"white",  width:"70" , height:"70"}} />
+                    <IoLogoCss3  style={{ backgroundColor:"white",width:"70" , height:"70"}}  />
+                    <FaSass  style={{ backgroundColor:"white",  width:"70" , height:"70"}} />
+                    <RiTailwindCssFill  style={{ backgroundColor:"white",  width:"70" , height:"70"}} />
+                    <FaBootstrap style={{border: "1px solid black", backgroundColor:"white", width:"70" , height:"70"}}  />
+                    <FaReact style={{border: "1px solid black", backgroundColor:"white",  width:"70" , height:"70"}}  />
+                    <TbBrandTypescript  style={{border: "1px solid black", backgroundColor:"white",  width:"70" , height:"70"}} />
+                    <SiMysql style={{border: "1px solid black", backgroundColor:"white",  width:"70" , height:"70"}} />
+                    <DiMongodb style={{border: "1px solid black", backgroundColor:"white",  width:"70" , height:"70"}} />
+                    <IoLogoJavascript style={{border: "1px solid black", backgroundColor:"white",  width:"70" , height:"70"}} />
                 </div>
             </div>
         </div>
