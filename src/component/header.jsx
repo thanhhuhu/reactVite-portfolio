@@ -4,9 +4,12 @@ import { VN } from "country-flag-icons/react/1x1";
 import { GB } from "country-flag-icons/react/3x2";
 import {Menu} from "antd";
 import {MdOutlineComputer} from "react-icons/md";
+// import {Toggle} from "./Toggle.jsx";
+// import {useState} from "react";
 
 // eslint-disable-next-line react/prop-types
 const Header = ({ scrollToSection, aboutRef, experienceRef, projectsRef}) => {
+    // const [isDark, setIsDark] = useState(true);
 
    const items = [
        {
@@ -29,7 +32,11 @@ const Header = ({ scrollToSection, aboutRef, experienceRef, projectsRef}) => {
        },
    ]
     return (
-        <div style={{backgroundColor: "skyblue"}}>
+        <div style={{backgroundColor: "skyblue"}} className="App" >
+            {/*<Toggle*/}
+            {/*    isChecked={isDark}*/}
+            {/*    handleChange={() => setIsDark(!isDark)}*/}
+            {/*/>*/}
             <Menu
                 style={{
                     width: 350,

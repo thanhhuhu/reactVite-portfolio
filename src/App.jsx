@@ -3,7 +3,7 @@ import Footer from "./component/footer.jsx";
 import Project from "./component/project.jsx";
 import About from "./component/aboutMe.jsx";
 import Experience from "./component/experience.jsx";
-import {useRef} from "react";
+import {useRef, useState} from "react";
 import Sidebar from "./component/Sidebar.jsx";
 
 function App() {
@@ -17,7 +17,8 @@ function App() {
         }
     };
   return (
-    <>
+    <div >
+
         <Header
             scrollToSection={scrollToSection}
             aboutRef={aboutRef}
@@ -40,7 +41,7 @@ function App() {
             <Project/>
         </div>
         <Footer />
-    </>
+    </div>
   )
 }
 
